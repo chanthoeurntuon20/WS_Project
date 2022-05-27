@@ -1,0 +1,4 @@
+
+10:46:09 - RQ : [{\"user\": \"none\", \"pwd\":\"none\",\"device_id\":\"none\",\"app_vName\":\"none\",\"criteriaValue\":\""   aa   "\"}]"
+
+10:46:09 - RS : [{"ERR":"Error","SMS":"Invalid API","DataList":null}]

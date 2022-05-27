@@ -1,0 +1,4 @@
+
+11:13:23 - RQ : [{\"user\": \"none\", \"pwd\":\"none\",\"device_id\":\"none\",\"app_vName\":\"none\",\"criteriaValue\":\" AA183527PV65"}]"
+
+11:13:24 - RS : [{"ERR":"Error","SMS":"Error while get loan from switch","DataList":null}]

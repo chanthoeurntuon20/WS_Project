@@ -1,0 +1,110 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WebService</name>
+    </assembly>
+    <members>
+        <member name="F:WebService.ed.form1">
+            <summary>
+            form1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:WebService.ed.Label1">
+            <summary>
+            Label1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:WebService.ed.txten">
+            <summary>
+            txten control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:WebService.ed.Label2">
+            <summary>
+            Label2 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:WebService.ed.txtde">
+            <summary>
+            txtde control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:WebService.ed.bten">
+            <summary>
+            bten control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:WebService.ed.btde">
+            <summary>
+            btde control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="M:WebService.NetworkShare.ConnectToShare(System.String,System.String,System.String)">
+            <summary>
+            Connects to the remote share
+            </summary>
+            <returns>Null if successful, otherwise error message.</returns>
+        </member>
+        <member name="M:WebService.NetworkShare.DisconnectFromShare(System.String,System.Boolean)">
+            <summary>
+            Remove the share from cache.
+            </summary>
+            <returns>Null if successful, otherwise error message.</returns>
+        </member>
+        <member name="F:WebService.testpage.form1">
+            <summary>
+            form1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:WebService.testpage.lbAppTitle">
+            <summary>
+            lbAppTitle control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:WebService.testpage.btnTest">
+            <summary>
+            btnTest control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+    </members>
+</doc>

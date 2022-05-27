@@ -1,0 +1,397 @@
+{
+	"info": {
+		"_postman_id": "7e42a26e-09ea-4bd7-bef2-f960d7aecee2",
+		"name": "TabletWSJason",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "1.ProspectReject",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "123",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "amk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\"NJxMGX6Dvt+4/ZVwNNokSaMCmDxweHB473MzesheQCA=\""
+				},
+				"url": {
+					"raw": "http://localhost:57705/api/ProspectReject?p=m4FoCSS0GDfRdg8lcUG%2FpNKPNZ3q6vY%2FApNEbEWkjVhdCBDrYgvNanqxleYO5tdIXN4dyY4N6qLpL0SXz%2BlJ9w%3D%3D&msgid=022947",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "57705",
+					"path": [
+						"api",
+						"ProspectReject"
+					],
+					"query": [
+						{
+							"key": "p",
+							"value": "m4FoCSS0GDfRdg8lcUG%2FpNKPNZ3q6vY%2FApNEbEWkjVhdCBDrYgvNanqxleYO5tdIXN4dyY4N6qLpL0SXz%2BlJ9w%3D%3D"
+						},
+						{
+							"key": "msgid",
+							"value": "022947"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "2.ProspectAddV2",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "123",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "amk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\"X+f5mUbYvoYUUA5eentvABWw1nb3S+a5PN6Bko5K3jUIVWWWk8wfSbSM+SudXdCC5SeSD4CczkcWmSo48MSt/mURs4YNbRtUZagAqigpGDS3FQr21h8d8/zPSsf3rCmiowE8rKTtOP69UOMk4WVrZOOP6MRM0vAvjVwN+rBhVtQlMqDoDH088fTVN79Lemt8L5B4rvo07Nxh58tR3aBV0Ge7Jo1kQqPCesbCQKhN6pcajY528DMcERpe3qUsJB2cGyoh4HCqqEKtH7TfpXYBay4uU3BgZFRsfNkPUgN1LSFLqxaoYxuJe7Va5WghyGMDEcIHuA3AiwCMJCll6bPOHMRBn+z2TJLjkZiTXetV2E+LeB0jBrQNZuhC7LYVjPXhLJKSsOn9KB3PxgNLLS91SQEnxeigKJvJx+ftNQqvvwOpT1d78ghsWUVMei3ItJl/fvCJ65UEZe+uin8kCERnKyjh81wDzMyWO39WCFiePz2P7ybiJ8ssmx0aNKZF5R6DOWE0N/XxxyhkO1uBSnDgDW8+yv1vFX0WOny0k13z48PdO7M6e2so6LqtdsnZXd+pUXcsjOQ1O+OBzt/mtxY/FIUypx8QV5PVG1/zbp3W5tShz0WYumm5N7j1bDTvJdafFFCoyVpIjlTmf/waFbHnAifK6OkEDY4Prp22GrgSAB1cf+Oi1rNVcVeb8cKx6Df55rLbeuLU8uJravfrUN2PXvh8xFCRxGIrt9v7EyYSayj620/AXW9zIzrlQHC38IemA9RcOw86zQB5y3elf1200vMSDLIC9Mdt2K2XOgPV8LuOg3mjFu5qjw0YhSfoUSqm1BtCpZ7VHiSn3ilU7cqMqLVMgYhzcz1J6IzomSt9hy+34cB6lhxvl5rYMNf9oBKtSDl0Q3LKtK7V5fsaf8G4kaxTI1VH62+l4WpdOdreozcFR4oELkA1789vz+gAv6uq+SXGWao+VxtV4Qzvu6ZJVfwSndB+kQYr1et6WYUrnl8z8phr/gM08SLgiweG/KtOb3fB1X4cYtCS2zh9sMKPAgcFTauiTfyXpiFsuJ1HET9/qNSy4T2zfeKP27gBMPfTG+AzNrHp23TEXNb3wxGyJjYKWaecDLsJfDrxqKIBWG4dEaCHtXdRAUoDiA3sD7QCOQvUOawQaev8Qf0tT3gaw0UxXSZISUf5LKaVt6xjpWNm7Lb5OsmFvIPObQhWZs9juV5MqA+puGMnsq6xiUzo4sDHxaAqXa3JHahNpLps3DjifeFpyF+Xew+yAs33HZHqTSZvSLGXfQft7R7vz5MA1nf7ssuuRtyly/rARZbxWYfxMVODGcWvxrD/Hfq9WzlnQGnk3ckmwVZICQIj4qzcO3rMP4d9Y3UbF5zdZAcp0j6/5volgYn6AHlIGL+Ukv9Csjf2VQ2qaeEdsTuAEiQAUNBR7sfDAFYvg5zrmzwl9EB3MiS5Uv1FDhPLMJSUuT4+G1TBJh18blqzWrXzBUHR/w==\""
+				},
+				"url": {
+					"raw": "http://localhost:57705/api/ProspectAddV2?p=m4FoCSS0GDfRdg8lcUG%2FpNt6jyEitZ01BJ0SlsS%2B83wUhqJWQTRMJOG%2FGgrcyixEnTeheqRQODWU67rjbtZG9Q%3D%3D&msgid=022947",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "57705",
+					"path": [
+						"api",
+						"ProspectAddV2"
+					],
+					"query": [
+						{
+							"key": "p",
+							"value": "m4FoCSS0GDfRdg8lcUG%2FpNt6jyEitZ01BJ0SlsS%2B83wUhqJWQTRMJOG%2FGgrcyixEnTeheqRQODWU67rjbtZG9Q%3D%3D"
+						},
+						{
+							"key": "msgid",
+							"value": "022947"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "3.ProspectGetV2",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "123",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "amk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\"CP28FaWuGglb3Nq2ZE3Jj9LmHMnnqIV8ueuLk0EgEss=\""
+				},
+				"url": {
+					"raw": "http://localhost:57705/api/ProspectGetV2?p=m4FoCSS0GDfRdg8lcUG%2FpNt6jyEitZ01BJ0SlsS%2B83wUhqJWQTRMJOG%2FGgrcyixEnTeheqRQODWU67rjbtZG9Q%3D%3D&msgid=022947",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "57705",
+					"path": [
+						"api",
+						"ProspectGetV2"
+					],
+					"query": [
+						{
+							"key": "p",
+							"value": "m4FoCSS0GDfRdg8lcUG%2FpNt6jyEitZ01BJ0SlsS%2B83wUhqJWQTRMJOG%2FGgrcyixEnTeheqRQODWU67rjbtZG9Q%3D%3D"
+						},
+						{
+							"key": "msgid",
+							"value": "022947"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "4. HolidayGetByTab",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "123",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "amk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\"CP28FaWuGglb3Nq2ZE3Jj9LmHMnnqIV8ueuLk0EgEss=\""
+				},
+				"url": {
+					"raw": "https://uattab01.amkcambodia.com:8442/api/",
+					"protocol": "https",
+					"host": [
+						"uattab01",
+						"amkcambodia",
+						"com"
+					],
+					"port": "8442",
+					"path": [
+						"api",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "5.ScheduleTaskAddEditByTab",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "123",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "amk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\"IP10D94f/fwv2CTlDhydQvykUBcEa3WzuFSiJeqEBvnRConBjdZYoaGVH3lD45xSdoP2gRBAXYJzIHZwN6nYmP0BADSqw2EaBVrhUhbniubUCJ3dVTR6EqgFfN6ezqKMmBQQJ1DnQlGK9L9vj5osJNRsff+92i3ewfOO5cmF8rU7uZal8FlGe3lFb+0cH1+cxsxd+067Wdbw/F+OMWpBgr5swpURADTB/66g+Zb4DDRm8NAdojMLUjpIK7WRP4iCxfDRxG38EjluNKGCLyAfBGkty/bBkKoYdJcSQ0dNfzwXSjJJlILR1sXBnfcNEgtBFfWBJgAxhwgCaxoOd1cvmb5RrNraSyIa4PFu6hZCSmVUgvU7wm1mFfY2egUQRW/9LLY0l2XgtgLRMfuWNTJ8iDKbIsfbEdEZTbByOKuo5S+zw/gYiuxhXRXk9YAiZee67bbK5pW+4n5rPrdMuL9YEpIqmxDqjMZSGWPtSQQdCUI1LuJofMHPQkWJ+lEiTXDfwlGVLHjbJabmuFNwuJuuP/swSmgpEuiA/3DRiQ06TDa5pnjUfTExXSXObxmPz8cARdWahOXoY30lrdymZJY2p6swqUMLM1hkB30jAkl3ydiUT9qKDVan17hKpps2cw/ieD37tIgaViQ8JUiAQLYFTPBO1/LQHdi+NVK0wcwYKnM8IfspRyhkdU68DhM/8KIZY+UC6dsMMPvITFaWgiVHKzBmVd0DE1VSL0bTbWUiQhdvY2GBqVCpSS0kdrE3mltHnx9w7KnVvx66H90LForBK+hA0RUBWf0oZYbrFsDILtCI44/lkQKb6l2i2+JGnCixknreeDiv7mHyCsAcgt4Q5SNP3f5qBaQFR4QOk6eHU3LcivuB7xtVg4gdNM6ah1Yhxb+DlM+xP8yUEZwLshh732fIOcD0WLrIV/wwrqfafkyuDvjb/49U+A6GGFO+J66oQPtrcR+qT6ZFixuinoQKIQ/y98OgPeONfh11tQK6S84IgzdimtD5igC2Ae+GSIoBAX21B7olv4lUxDM7iZeLRwF/U6es3Dx9L9EyQJCor6qr36lFBuh3J7oqBsgxXKqFGpEZARMTtZJs0YE/pdvXhpys0toWw+9OIdvaGPQyp+nxs8YXepTZEXTYgH+o9tVbk0CZlFJMcwb0WViC0Px3O2HBA+EwwtKG3NO/EQU9XyzibcwGOFux4PXrDsWKzeXBqazixAb4PGhYyo2b3yypdPOrsESoZi64P/Lf04YfO3P7rjS+kPoI9olAOWhC8caTNrjRvJc8eGpr1HvyrjAj1PZ2+dKKhZuPWfXnGK6UhInakKac6wYFDObSlkEovrUxHY+G/UOIEdCyENuMT5leAZv9l/LWROXjRc8Z6Pf5Hco7MGVe4JXDG0wdgQnWrM4m6BJHNiy/P6RprzCFtSR54kj3xWt6Q0SQKKQpQzcxFqVbQ/+orHCyiD1QvEeh9u66jFg0Hp16sVdhwikm9Tmol9g5j2LvOVoPKUfJB4A3uZLig8pVPMJ5f4/gsVEWMIxlUgdBD4dpgQ7fe9Qgaj3gEGdjy4ijAN1IJVbFlOT49xvKJWaWQ+nT7fH7lV8au8qiFx1TgBeRrJ+EpxxCQ0KYkXN6Q92RoTyNfd43jirJR76liTMxLDxeCS7WArIEX1wumZasN+9d6NBQT8lLwuw3wHzopo4rk7396ry28bEYHN6hCs2+AdyL0MIX6sZHVMR9YxF+xCDcOrP+imG8ECt3AGT54gxk3Er205EOVyORSeiF6PUwj4jePlJLeHr+zqlMJWKGe4QBeADZJswR4gemBF1gynfo7aJRpF5AH1NJDxI=\""
+				},
+				"url": {
+					"raw": "https://uattab01.amkcambodia.com:8442/api/ScheduleTaskAddEditByTab?p=m4FoCSS0GDfRdg8lcUG%2FpNt6jyEitZ01BJ0SlsS%2B83wUhqJWQTRMJOG%2FGgrcyixEnTeheqRQODWU67rjbtZG9Q%3D%3D&msgid=022947",
+					"protocol": "https",
+					"host": [
+						"uattab01",
+						"amkcambodia",
+						"com"
+					],
+					"port": "8442",
+					"path": [
+						"api",
+						"ScheduleTaskAddEditByTab"
+					],
+					"query": [
+						{
+							"key": "p",
+							"value": "m4FoCSS0GDfRdg8lcUG%2FpNt6jyEitZ01BJ0SlsS%2B83wUhqJWQTRMJOG%2FGgrcyixEnTeheqRQODWU67rjbtZG9Q%3D%3D"
+						},
+						{
+							"key": "msgid",
+							"value": "022947"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "6.ScheduleTaskGetByTab",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "123",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "amk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\"IKiwwTITpeanUcXuQVWW+BfaAPRJ9lEWvfWmN8Y3das7LFvj6u63VuDF3eyx+Hit\""
+				},
+				"url": {
+					"raw": "https://uattab01.amkcambodia.com:8442/api/ScheduleTaskGetByTab?p=m4FoCSS0GDfRdg8lcUG%2FpNt6jyEitZ01BJ0SlsS%2B83wUhqJWQTRMJOG%2FGgrcyixEnTeheqRQODWU67rjbtZG9Q%3D%3D&msgid=022947",
+					"protocol": "https",
+					"host": [
+						"uattab01",
+						"amkcambodia",
+						"com"
+					],
+					"port": "8442",
+					"path": [
+						"api",
+						"ScheduleTaskGetByTab"
+					],
+					"query": [
+						{
+							"key": "p",
+							"value": "m4FoCSS0GDfRdg8lcUG%2FpNt6jyEitZ01BJ0SlsS%2B83wUhqJWQTRMJOG%2FGgrcyixEnTeheqRQODWU67rjbtZG9Q%3D%3D"
+						},
+						{
+							"key": "msgid",
+							"value": "022947"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Test",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "123",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "amk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\"IKiwwTITpeanUcXuQVWW+FQoLwhJxM9L1nRamAJi68t+4+fxtsr6cIG+hiq7OohW\""
+				},
+				"url": {
+					"raw": "http://localhost:57705/api/AccountCreationToCBS?p=m4FoCSS0GDfRdg8lcUG%2FpNt6jyEitZ01BJ0SlsS%2B83wUhqJWQTRMJOG%2FGgrcyixEnTeheqRQODWU67rjbtZG9Q%3D%3D&msgid=022947",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "57705",
+					"path": [
+						"api",
+						"AccountCreationToCBS"
+					],
+					"query": [
+						{
+							"key": "p",
+							"value": "m4FoCSS0GDfRdg8lcUG%2FpNt6jyEitZ01BJ0SlsS%2B83wUhqJWQTRMJOG%2FGgrcyixEnTeheqRQODWU67rjbtZG9Q%3D%3D"
+						},
+						{
+							"key": "msgid",
+							"value": "022947"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

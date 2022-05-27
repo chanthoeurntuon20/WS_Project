@@ -1,0 +1,25 @@
+
+16:23:01 - WatchlistCustomer_RQ : <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:amk="http://temenos.com/AMKINDCUST" xmlns:cus="http://temenos.com/CUSTOMERTUAMLEXEC">
+	                                <soapenv:Header/>
+	                                <soapenv:Body>
+		                                <amk:WSCUSTAMLEXEC>
+			                                <WebRequestCommon>
+				                                <company>KH0010001</company>
+				                                <password>TABLETUSER2018</password>
+				                                <userName>AMK.TABLETUSER</userName>
+			                                </WebRequestCommon>
+			                                <OfsFunction>
+				                                <messageId>BA20220419042301</messageId>
+			                                </OfsFunction>
+			                                <CUSTOMERTUAMLEXECType id="3273373">
+				                                <cus:Blocked></cus:Blocked>
+                                                <cus:AMLServiceType>WATCH.VAL</cus:AMLServiceType>
+                                                <cus:AMLServiceExec>EXEC</cus:AMLServiceExec>
+			                                </CUSTOMERTUAMLEXECType>
+		                                </amk:WSCUSTAMLEXEC>
+	                                </soapenv:Body>
+                                </soapenv:Envelope>
+
+16:23:02 - WatchlistCustomer_RS: 200 : <?xml version="1.0" encoding="UTF-8"?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/"><S:Body><ns5:WSCUSTAMLEXECResponse xmlns:ns2="http://temenos.com/CUSTOMERTUAMLEXEC" xmlns:ns3="http://temenos.com/CUSTOMER" xmlns:ns4="http://temenos.com/CUSTOMERAMKINDIVWS" xmlns:ns5="http://temenos.com/AMKINDCUST"><Status><transactionId>3273373</transactionId><messageId>BA20220419042301</messageId><successIndicator>T24Error</successIndicator><application>NO</application><messages>BLOCKED:1:1=NOT DEFINED IN VETTING TABLE</messages></Status></ns5:WSCUSTAMLEXECResponse></S:Body></S:Envelope>
+
+16:23:13 - WatchlistCustomer_RS: 500 : <?xml version="1.0" encoding="UTF-8"?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/"><S:Body><ns5:WSCUSTAMLEXECResponse xmlns:ns2="http://temenos.com/CUSTOMERTUAMLEXEC" xmlns:ns3="http://temenos.com/CUSTOMER" xmlns:ns4="http://temenos.com/CUSTOMERAMKINDIVWS" xmlns:ns5="http://temenos.com/AMKINDCUST"><Status><transactionId>3273373</transactionId><messageId>BA20220419042301</messageId><successIndicator>T24Error</successIndicator><application>NO</application><messages>BLOCKED:1:1=NOT DEFINED IN VETTING TABLE</messages></Status></ns5:WSCUSTAMLEXECResponse></S:Body></S:Envelope>

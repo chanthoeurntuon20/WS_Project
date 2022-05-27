@@ -1,0 +1,4 @@
+
+11:48:33 - RQ : {"App_vName":"3.1.2","Criteria":"LoanAppID","CriteriaValue":"1295","Data":null,"Device_id":"b13a429e15191430","Pwd":"1","User":"4634","LoanApp":null}
+
+12:00:19 - RS : [{"LoanApp":[],"ERR":"Error","SMS":"","AccountID":""}]

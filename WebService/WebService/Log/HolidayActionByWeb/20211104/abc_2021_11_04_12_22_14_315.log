@@ -1,0 +1,4 @@
+
+12:22:14 - 1.RQ : api_name:abc | api_key:123 | json:c/HzBLIYem2jLbJWR8EEVKiTIc/V8MHH0r/kFV0pZh/pJAkPjnSDetb6qPau+cviNVPekNLWYB2BElKv9jxMAF4ekjW3VGWVe+0GsfpUe43XDxu85ehB3bEDS4AO7ym7j1VvqRCQZwom1R7cgogo/A==
+
+12:22:14 - RS : [{"ERR":"Error","SMS":"HolidayID is not found","ERRCode":"","DataList":[{"HolidayID":""}]}]

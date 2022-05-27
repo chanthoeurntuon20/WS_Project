@@ -1,0 +1,34 @@
+
+14:46:20 - 1.1.RQJson : IP10D94f/fwv2CTlDhydQnixtGmunM7Ctf+Fb9FdmO4CJhgaSKsfaYBsyGjy5bvYEbzs0oIEyBQeADxcv5xwsAaTABI25ID3yJ6SUSReXfq91TtrlgBtzLS3Ymo+x6wGTwwymfWxZeE2cHrhpBYLjopIkM09rJ13Q8m2SV2rD6jueFK7K8KKz1zQP1O8L2Dny3kxqDoTN92OxmvHY3mu2Y/fDjh7kZCasp9koiuJ0Ce+ZPyJFX4QqAYqbFM5LB2afz57/MijdoO+CM76dtrQ6hl4fDh5r0Aci3aAWdVUEsk=
+
+14:46:20 - 1.2.RQJsonDE : [
+    {
+        "LoanAppId": "2154233",
+        "Status": "1"
+    },
+    {
+        "LoanAppId": "2154230",
+        "Status": "1"
+    },
+    {
+        "LoanAppId": "2154223",
+        "Status": "1"
+    }
+]
+
+14:46:20 - 1.RQ: : [
+    {
+        "LoanAppId": "2154233",
+        "Status": "1"
+    },
+    {
+        "LoanAppId": "2154230",
+        "Status": "1"
+    },
+    {
+        "LoanAppId": "2154223",
+        "Status": "1"
+    }
+]
+
+14:46:21 - 2.RS : #Update Sync Status LoanAppId:2154233 Is Failure.#Update Sync Status LoanAppId:2154230 Is Failure.#Update Sync Status LoanAppId:2154223 Is Failure..

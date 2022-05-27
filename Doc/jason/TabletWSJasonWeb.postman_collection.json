@@ -1,0 +1,298 @@
+{
+	"info": {
+		"_postman_id": "5424962d-0291-42c9-be3a-43adf9d0822a",
+		"name": "TabletWSJasonWeb",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "HolidayCreateScheduleTask",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "123",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "amk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\"c/HzBLIYem2jLbJWR8EEVKiTIc/V8MHH0r/kFV0pZh/pJAkPjnSDetb6qPau+cviNVPekNLWYB2BElKv9jxMAF4ekjW3VGWVe+0GsfpUe43XDxu85ehB3bEDS4AO7ym7j1VvqRCQZwom1R7cgogo/A==\""
+				},
+				"url": {
+					"raw": "http://localhost:57705/api/HolidayActionByWeb?api_name=abc&api_key=123&username=abc",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "57705",
+					"path": [
+						"api",
+						"HolidayActionByWeb"
+					],
+					"query": [
+						{
+							"key": "api_name",
+							"value": "abc"
+						},
+						{
+							"key": "api_key",
+							"value": "123"
+						},
+						{
+							"key": "username",
+							"value": "abc"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "9.ScheduleTaskAddEditByWeb",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "123",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "amk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\"CzylmTmHBKiCtnIf3zVkUOn/NrFbeQYiIgq3avtHh6J/touGHSwYjWFoTTJkOhRV64ZfoPGxJ81mNvaK2TDNXCOjqcUc8K2MDqA4lbSRZjy5vGUXWu3Rvjr24Ydst49Gs2BIHq4bNHBBCEzUYjcPOy7+TkHC8dt6Uzph/ggqWWjxRdLzQFq7iXsaoUjXT2juYch3ZuxG9gBpyTKzvu3eVk5sOvWSFF1gKcVwQ9j+xwQidac7yaG+g2IFtzmlp55ndGjvGeOsHRnM7tNffT/8UY4gm0fcOLcpkphmxU7OMIGLyXxiXRioBnqpCJGxW461GukPKST2OoAn41Rfbgrw072GH0FEFxR3IxCKogs6XedBj3gkPo0sqqBxVg7e5YhXRlhcD6V/+j6dsksyiJJlP0/wb2Xc9nT3Qfegmua5xz+u26y8aUaw/eBs5G77WO0wNShV399BkQkJbc/G4LhQ4AC7kV2kCYm/ZMJnsDlvcykoBUlQUk8AzVXuOj+B9mddQS4xQPY2Ebp2/AryFcRIVQsUR+Qr9/M6IXoNg7/T0PWWY2C79+k4TRayAKTLkznRcEGmfZ/XZHgE90KSavqXlX73tnLhW+E19W1jy9PEQ5C0OJjDe8LQGvJ5PhBoTkxlWwCHfYK2wzcmA9YvQ/flQd7XQpvDU10w84HdOQXnNHs=\""
+				},
+				"url": {
+					"raw": "https://uat-tab-01.amkcambodia.com:8442/api/ScheduleTaskAddEditByWeb?api_name=abc&api_key=123&username=abc",
+					"protocol": "https",
+					"host": [
+						"uat-tab-01",
+						"amkcambodia",
+						"com"
+					],
+					"port": "8442",
+					"path": [
+						"api",
+						"ScheduleTaskAddEditByWeb"
+					],
+					"query": [
+						{
+							"key": "api_name",
+							"value": "abc"
+						},
+						{
+							"key": "api_key",
+							"value": "123"
+						},
+						{
+							"key": "username",
+							"value": "abc"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "8. ScheduleTaskGetByWeb",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "123",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "amk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\"dtRk+LTlLdFZxWwOZlPSMx85igMilQwqd8ToE2Z2gN022UO0Xsoq4eRT7LxScJwKz7Xblubm+2WPBXe+fPZ1AaFIY6m4ZuoqZT6gs0PuO8A=\""
+				},
+				"url": {
+					"raw": "https://uat-tab-01.amkcambodia.com:8442/api/ScheduleTaskGetByWeb?api_name=abc&api_key=123&username=abc",
+					"protocol": "https",
+					"host": [
+						"uat-tab-01",
+						"amkcambodia",
+						"com"
+					],
+					"port": "8442",
+					"path": [
+						"api",
+						"ScheduleTaskGetByWeb"
+					],
+					"query": [
+						{
+							"key": "api_name",
+							"value": "abc"
+						},
+						{
+							"key": "api_key",
+							"value": "123"
+						},
+						{
+							"key": "username",
+							"value": "abc"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ViewCalendarByYearMonthWeekByWeb",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "123",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "amk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\"c/HzBLIYem2jLbJWR8EEVKiTIc/V8MHH0r/kFV0pZh/pJAkPjnSDetb6qPau+cviNVPekNLWYB2BElKv9jxMAF4ekjW3VGWVe+0GsfpUe43XDxu85ehB3bEDS4AO7ym7j1VvqRCQZwom1R7cgogo/A==\""
+				},
+				"url": {
+					"raw": "http://localhost:57705/api/HolidayActionByWeb?api_name=abc&api_key=123&username=abc",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "57705",
+					"path": [
+						"api",
+						"HolidayActionByWeb"
+					],
+					"query": [
+						{
+							"key": "api_name",
+							"value": "abc"
+						},
+						{
+							"key": "api_key",
+							"value": "123"
+						},
+						{
+							"key": "username",
+							"value": "abc"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "HolidayGetByWeb",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " \"CP28FaWuGglb3Nq2ZE3Jj9LmHMnnqIV8ueuLk0EgEss=\"",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://uattab01.amkcambodia.com:8442/api/ProspectGetV2?api_name=abc&api_key=123&username=abc",
+					"protocol": "https",
+					"host": [
+						"uattab01",
+						"amkcambodia",
+						"com"
+					],
+					"port": "8442",
+					"path": [
+						"api",
+						"ProspectGetV2"
+					],
+					"query": [
+						{
+							"key": "api_name",
+							"value": "abc"
+						},
+						{
+							"key": "api_key",
+							"value": "123"
+						},
+						{
+							"key": "username",
+							"value": "abc"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

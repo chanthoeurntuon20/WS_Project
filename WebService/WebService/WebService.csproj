@@ -1,0 +1,486 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Swashbuckle.AspNetCore.6.1.5\build\Swashbuckle.AspNetCore.props" Condition="Exists('..\packages\Swashbuckle.AspNetCore.6.1.5\build\Swashbuckle.AspNetCore.props')" />
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BF749379-75B8-4607-8470-8957872E4448}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WebService</RootNamespace>
+    <AssemblyName>WebService</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <Use64BitIISExpress />
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\WebService.xml</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Dapper, Version=1.60.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Dapper.1.60.1\lib\net451\Dapper.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=7.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.7.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Renci.SshNet, Version=2020.0.1.0, Culture=neutral, PublicKeyToken=1cee9f8bde3db106, processorArchitecture=MSIL">
+      <HintPath>..\packages\SSH.NET.2020.0.1\lib\net40\Renci.SshNet.dll</HintPath>
+    </Reference>
+    <Reference Include="RestSharp, Version=106.12.0.0, Culture=neutral, PublicKeyToken=598062e77f915f75, processorArchitecture=MSIL">
+      <HintPath>..\packages\RestSharp.106.12.0\lib\net452\RestSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Swashbuckle.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=cd1bb07a5ac7c7bc, processorArchitecture=MSIL">
+      <HintPath>..\packages\Swashbuckle.Core.5.6.0\lib\net40\Swashbuckle.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.6.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.6\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Cors, Version=5.2.6.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Cors.5.2.6\lib\net45\System.Web.Cors.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http, Version=5.2.6.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.2.6\lib\net45\System.Web.Http.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Http.Cors, Version=5.2.6.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Cors.5.2.6\lib\net45\System.Web.Http.Cors.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.5.2.3\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.7\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.7\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="WebActivatorEx, Version=2.0.0.0, Culture=neutral, PublicKeyToken=7b26dc2a43f6a0d4, processorArchitecture=MSIL">
+      <HintPath>..\packages\WebActivatorEx.2.0\lib\net40\WebActivatorEx.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="doc.html" />
+    <Content Include="ed.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="packages.config" />
+    <Content Include="libman.json" />
+    <Compile Include="ApiControllers\CustomerAmls\CustomerAMLController.cs" />
+    <Compile Include="ApiControllers\Loans\LoanAppController.cs" />
+    <Compile Include="ApiControllers\Reports\CommissionFinaceController.cs" />
+    <Compile Include="ApiControllers\Loans\LoanRestudyController.cs" />
+    <Compile Include="ApiControllers\ScheduleTask\ScheduleTaskController.cs" />
+    <Compile Include="ApiControllers\Users\UserController.cs" />
+    <Compile Include="App_Start\AddRequiredAuthorizationHeaderParameter.cs" />
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\SwaggerConfig.cs" />
+    <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="App_Start\XLogoDocumentFilter.cs" />
+    <Compile Include="Common.cs" />
+    <Compile Include="Extension.cs" />
+    <Compile Include="Extensions\CheckValidation.cs" />
+    <Compile Include="FileDowloadV2_BKController.cs" />
+    <Compile Include="GetAllListController.cs" />
+    <Compile Include="GetNotificationController.cs" />
+    <Compile Include="GetNotificationCountController.cs" />
+    <Compile Include="Helpers\AppConfig.cs" />
+    <Compile Include="Helpers\Cryptography.cs" />
+    <Compile Include="ListData.cs" />
+    <Compile Include="LoanAppPostV3Controller.cs" />
+    <Compile Include="LoanAppUploadByAMV2WebController.cs" />
+    <Compile Include="LoanOverdueBulkSaveLogsPostController.cs" />
+    <Compile Include="LoanOverdueCompleteDataOfflineController.cs" />
+    <Compile Include="LoanOverdueLogsGetController.cs" />
+    <Compile Include="LoanOverdueMeetingLogPostController.cs" />
+    <Compile Include="LoanOverdueModel.cs" />
+    <Compile Include="LoanoverdueReportByFilterController.cs" />
+    <Compile Include="LoanOverdueReportGetController.cs" />
+    <Compile Include="LoanOvrdueReportGetByIdController.cs" />
+    <Compile Include="MarkNotificationAsReadController.cs" />
+    <Compile Include="Models\LoanApp\LoanAppPurchaseProperty.cs" />
+    <Compile Include="Models\Req\Assets\AssetImgV2.cs" />
+    <Compile Include="Models\Req\Assets\AssetV2.cs" />
+    <Compile Include="Models\Req\CashFlows\CashFlowMSIInExV2.cs" />
+    <Compile Include="Models\Req\CashFlows\CashFlowMSIV2.cs" />
+    <Compile Include="Models\Req\CashFlows\CashFlowV2.cs" />
+    <Compile Include="Models\Req\CustomerAmls\CustomerAmlReq.cs" />
+    <Compile Include="Models\Req\CustomerAmls\WatchlistAmlReq.cs" />
+    <Compile Include="Models\Res\CustomerAmls\WatchlistAmlRes.cs" />
+    <Compile Include="Models\Req\Disbusements\Disbusement.cs" />
+    <Compile Include="Models\Req\Geolocations\GeolocationReq.cs" />
+    <Compile Include="Models\Req\Geolocations\GeolocationLoanCreation.cs" />
+    <Compile Include="Models\Req\Geolocations\GeolocationLoanDisbusement.cs" />
+    <Compile Include="Models\Req\Geolocations\GeolocationLoanRepayment.cs" />
+    <Compile Include="Models\Req\LoanApp\CheckLoanRestudyReq.cs" />
+    <Compile Include="Models\Req\LoanApp\CheckStatusLoanRestudy.cs" />
+    <Compile Include="Models\Req\LoanApp\LoanAppCustomerReq.cs" />
+    <Compile Include="Models\Req\LoanApp\LoanAppReq.cs" />
+    <Compile Include="Models\Req\Occupations\PersonOccupation.cs" />
+    <Compile Include="Models\Req\Occupations\PersonOccupationDetail.cs" />
+    <Compile Include="Models\Req\Persons\CreditorV2.cs" />
+    <Compile Include="Models\Req\Persons\LoanAppV2.cs" />
+    <Compile Include="Models\Req\Persons\PersonDepositV2.cs" />
+    <Compile Include="Models\Req\Persons\PersonImgV2.cs" />
+    <Compile Include="Models\Req\Persons\PersonKYC.cs" />
+    <Compile Include="Models\Req\Persons\PersonKYCImage.cs" />
+    <Compile Include="Models\Req\Persons\PersonNationality.cs" />
+    <Compile Include="Models\Req\Persons\PersonRealEstateImgV2.cs" />
+    <Compile Include="Models\Req\Persons\PersonRealEstateV2.cs" />
+    <Compile Include="Models\Req\Persons\PersonV2.cs" />
+    <Compile Include="Models\Req\Persons\PurposeDetailV2.cs" />
+    <Compile Include="Models\Req\Persons\PurposeV2.cs" />
+    <Compile Include="Models\Req\Repayments\Repayment.cs" />
+    <Compile Include="Models\Req\Reports\CommissionReportByOfficeIDGetV21Req.cs" />
+    <Compile Include="Models\Req\Schedules\GetReportCOByWebRQ.cs" />
+    <Compile Include="Models\Req\Schedules\SchduleTaskGetByTabRQ.cs" />
+    <Compile Include="Models\Req\Schedules\SchduleTaskGetByWebRQ.cs" />
+    <Compile Include="Models\Req\Schedules\ScheduleTaskAddEditByWebRQ.cs" />
+    <Compile Include="Models\Req\Schedules\ScheduleTaskByTabReq.cs" />
+    <Compile Include="Models\Req\Schedules\ScheduleTaskByWebReq.cs" />
+    <Compile Include="Models\Req\Schedules\ScheduleTaskTabReq.cs" />
+    <Compile Include="Models\Req\Users\UserLogin.cs" />
+    <Compile Include="Models\Res\LoanApp\CheckStatusLoanRestudyRes.cs" />
+    <Compile Include="Models\Res\LoanApp\LoanAppCustomerRes.cs" />
+    <Compile Include="Models\Res\LoanApp\LoanAppRes.cs" />
+    <Compile Include="Models\Res\LoanApp\LoanRestudyRes.cs" />
+    <Compile Include="Models\Res\Occupations\PersonOccupationDetailRs.cs" />
+    <Compile Include="Models\Res\Occupations\PersonOccupationRs.cs" />
+    <Compile Include="Models\Res\Reports\CommissionReportByOfficeIDGetV21List.cs" />
+    <Compile Include="Models\Res\Reports\CommissionReportByOfficeIDGetV21Res.cs" />
+    <Compile Include="Models\Res\Schedules\ReportCOByWebRSModel.cs" />
+    <Compile Include="Models\Res\Schedules\SchduleTaskGetByTabRSModel.cs" />
+    <Compile Include="Models\Res\Schedules\SchduleTaskGetByWebRSModel.cs" />
+    <Compile Include="Models\Res\Schedules\SchduleTaskStatusAndTypeDetail.cs" />
+    <Compile Include="Models\Res\Schedules\SchduleTaskStatusAndTypeRes.cs" />
+    <Content Include="Download\CUSTOMER.20220103103158.csv" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="testpage.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AccountCreationToCBSController.cs" />
+    <Compile Include="AccountCreationToCBSV2Controller.cs" />
+    <Compile Include="AccountCreationToCBSModel.cs" />
+    <Compile Include="AccountGetFromCBSController.cs" />
+    <Compile Include="AccountGetFromCBSV2Controller.cs" />
+    <Compile Include="AccountPostingToCBSController.cs" />
+    <Compile Include="AccountPostingToCBSJsonModel.cs" />
+    <Compile Include="AccountPostingToCBSJsonRes.cs" />
+    <Compile Include="AgentGetRepayByAccPaidOffController.cs" />
+    <Compile Include="CBCCheckGetFromCBSController.cs" />
+    <Compile Include="CheckReleaseVersionController.cs" />
+    <Compile Include="CheckSessionController.cs" />
+    <Compile Include="DisburmentRejectMIUploadImageController.cs" />
+    <Compile Include="ed.aspx.cs">
+      <DependentUpon>ed.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ed.aspx.designer.cs">
+      <DependentUpon>ed.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="func\PaidOffEngine.cs" />
+    <Compile Include="HolidayActionByWebController.cs" />
+    <Compile Include="Models\Req\Schedules\SchduleTaskStatusAndTypeReq.cs" />
+    <Compile Include="Models\Res\Schedules\ScheduleTaskAddEditByTabRSModel.cs" />
+    <Compile Include="Models\Res\Schedules\ScheduleTaskAddEditByWebRSModel.cs" />
+    <Compile Include="Models\Res\Users\User.cs" />
+    <Compile Include="Repositories\AppDbContext.cs" />
+    <Compile Include="Repositories\CommissionRepo.cs" />
+    <Compile Include="Repositories\LoanAppRepository.cs" />
+    <Compile Include="Repositories\LoanRestudyRepo.cs" />
+    <Compile Include="Repositories\ScheduleTaskRepository.cs" />
+    <Compile Include="Repositories\UserLoginRepo.cs" />
+    <Compile Include="ResolvingInformationCompleteOfflineController.cs" />
+    <Compile Include="ScheduleTaskAddEditByWebController.cs" />
+    <Compile Include="ScheduleTaskTypeAndStatusGetByWebController.cs" />
+    <Compile Include="ScheduleTaskGetByWebController.cs" />
+    <Compile Include="ScheduleTaskAddEditByTabController.cs" />
+    <Compile Include="HolidayGetByWebController.cs" />
+    <Compile Include="MiRegisterController.cs" />
+    <Compile Include="NetworkShare.cs" />
+    <Compile Include="pmsCloseAccountApointmentCancelController.cs" />
+    <Compile Include="pmsCloseAccountApointmentMeetController.cs" />
+    <Compile Include="pmsCloseAccountApointmentNewController.cs" />
+    <Compile Include="pmsCloseAccountApointmentNewMeetController.cs" />
+    <Compile Include="pmsCloseAccountController.cs" />
+    <Compile Include="pmsCloseAccountDetailController.cs" />
+    <Compile Include="pmsDashboardController.cs" />
+    <Compile Include="pmsDashboardListController.cs" />
+    <Compile Include="pmsDueBalanceApointmentCancelController.cs" />
+    <Compile Include="pmsDueBalanceApointmentMeetController.cs" />
+    <Compile Include="pmsDueBalanceApointmentNewController.cs" />
+    <Compile Include="pmsDueBalanceApointmentNewMeetController.cs" />
+    <Compile Include="pmsDueBalanceController.cs" />
+    <Compile Include="pmsFirebaseTokenController.cs" />
+    <Compile Include="pmsNewAccountApointmentCancelController.cs" />
+    <Compile Include="pmsNewAccountApointmentMeetController.cs" />
+    <Compile Include="pmsNewAccountApointmentNewController.cs" />
+    <Compile Include="pmsNewAccountApointmentNewMeetController.cs" />
+    <Compile Include="pmsNewAccountController.cs" />
+    <Compile Include="pmsDueBalanceDetailController.cs" />
+    <Compile Include="pmsNewAccountDetailController.cs" />
+    <Compile Include="pmsNewEnquiryApointmentCancelController.cs" />
+    <Compile Include="pmsNewEnquiryApointmentMeetController.cs" />
+    <Compile Include="pmsNewEnquiryApointmentNewController.cs" />
+    <Compile Include="pmsNewEnquiryApointmentNewMeetController.cs" />
+    <Compile Include="pmsNewEnquiryDetailController.cs" />
+    <Compile Include="pmsNewEnquiryController.cs" />
+    <Compile Include="LoanAppPostV2ConfirmController.cs" />
+    <Compile Include="LoanAppCopyListGetV2Controller.cs" />
+    <Compile Include="LoginSessionClass.cs" />
+    <Compile Include="PortalController.cs" />
+    <Compile Include="PortalModel.cs" />
+    <Compile Include="HolidayGetByTabController.cs" />
+    <Compile Include="ProspectRejectController.cs" />
+    <Compile Include="ScheduleTaskGetByTabController.cs" />
+    <Compile Include="Services\AddLoanAppPersonAMLService.cs" />
+    <Compile Include="Services\GeolocationService.cs" />
+    <Compile Include="Services\SoapConfigurer.cs" />
+    <Compile Include="Services\WatchlistAmlScreeningService.cs" />
+    <Compile Include="Services\XMLNoteListToDataTable.cs" />
+    <Compile Include="SQLForTabGetV2Controller.cs" />
+    <Compile Include="AgentGetAAInfoController.cs" />
+    <Compile Include="AgentRepayConfirmPaidController.cs" />
+    <Compile Include="AgentGetRepayByAccController.cs" />
+    <Compile Include="AddressGetV2Controller.cs" />
+    <Compile Include="AddressGetController.cs" />
+    <Compile Include="AddressGetFromCBSController.cs" />
+    <Compile Include="AddressModel.cs" />
+    <Compile Include="AMRotateUpdateController.cs" />
+    <Compile Include="AMUnderCUQMGetController.cs" />
+    <Compile Include="BasicAuthenticationAttribute.cs" />
+    <Compile Include="CBCCheckGetFromCBSCDATAModel.cs" />
+    <Compile Include="CBCCheckGetFromCBSBKController.cs" />
+    <Compile Include="Class1.cs" />
+    <Compile Include="COGetCompanyIDController.cs" />
+    <Compile Include="CommissionReportByOfficeIDGetV21Controller.cs" />
+    <Compile Include="CommissionReportFinanceByOfficeIDGetV21Controller.cs" />
+    <Compile Include="CompanyGetController.cs" />
+    <Compile Include="CommissionReportByOfficeIDGetV2Controller.cs" />
+    <Compile Include="CustomerForMIModel.cs" />
+    <Compile Include="CustomerGetByCIDForMIController.cs" />
+    <Compile Include="CustomerGetByRangController.cs" />
+    <Compile Include="CustomerGetByRangV2Controller.cs" />
+    <Compile Include="CustomerGetCountV2Controller.cs" />
+    <Compile Include="CustomerGetCountController.cs" />
+    <Compile Include="DisburmentRejectController.cs" />
+    <Compile Include="LoanAppUploadByAMV2Controller.cs" />
+    <Compile Include="LoanAppPostToCBSV2Controller.cs" />
+    <Compile Include="LoanAppRestudyByLoanAppIDGetV2Controller.cs" />
+    <Compile Include="LoanAppIDListGetToApproveV2Controller.cs" />
+    <Compile Include="LoanAppHeaderGetByAMV2Controller.cs" />
+    <Compile Include="LoanAppRestudyGetV2Controller.cs" />
+    <Compile Include="LoanAppPostV2RQ.cs" />
+    <Compile Include="LoginController - bk.cs" />
+    <Compile Include="ChangePwdV2Controller.cs" />
+    <Compile Include="ProspectAddV2Controller.cs" />
+    <Compile Include="COUserGetByVBIDGetV2Controller.cs" />
+    <Compile Include="ProsRefStatusGetByCodeV2Controller.cs" />
+    <Compile Include="RepayMIController.cs" />
+    <Compile Include="T24_RDVUploadFromDeviceController.cs" />
+    <Compile Include="T24_GetRepayByAMOrCOFromDeviceController.cs" />
+    <Compile Include="T24_GetDisbByAMOrCOFromDeviceController.cs" />
+    <Compile Include="ValidationCheck.cs" />
+    <Compile Include="VBGetByVillageIDGetV2Controller.cs" />
+    <Compile Include="ProsRefComGetV2Controller.cs" />
+    <Compile Include="ProductGetV2Controller.cs" />
+    <Compile Include="FileDowloadV2Controller.cs" />
+    <Compile Include="FileUploadV2Controller.cs" />
+    <Compile Include="HelloController.cs" />
+    <Compile Include="ProsCustAddV2Controller.cs" />
+    <Compile Include="ProsCustGetV2Controller.cs" />
+    <Compile Include="ProsCustImgDeleteV2Controller.cs" />
+    <Compile Include="ProspectGetV2Controller.cs" />
+    <Compile Include="DefinedFieldGetV2Controller.cs" />
+    <Compile Include="DisbGetFromCBSController.cs" />
+    <Compile Include="DisbPostFromDeviceController.cs" />
+    <Compile Include="DisbPostFromDeviceModel.cs" />
+    <Compile Include="DisbPostToCBSController.cs" />
+    <Compile Include="DisbPostToCBSErrorController.cs" />
+    <Compile Include="DisbPostToCBSModel.cs" />
+    <Compile Include="FileDowloadController.cs" />
+    <Compile Include="GroupNumberByVBIDGetController.cs" />
+    <Compile Include="LoanAAForSelectByCOIDDisbDateGetController.cs" />
+    <Compile Include="LoanAppApproveToCBCModel.cs" />
+    <Compile Include="LoanAppApproveToCBSController.cs" />
+    <Compile Include="LoanAppApproveToCBSErrorModel.cs" />
+    <Compile Include="LoanAppCreateAccountController.cs" />
+    <Compile Include="LoanAppEditToCBSController.cs" />
+    <Compile Include="LoanAppEditToCBSModel.cs" />
+    <Compile Include="LoanAppGetByIDController.cs" />
+    <Compile Include="LoanAppGetByIDModel.cs" />
+    <Compile Include="LoanAppPostV2Controller.cs" />
+    <Compile Include="LoanAppRejectToCBSController.cs" />
+    <Compile Include="LoanAppStatusGetController.cs" />
+    <Compile Include="LoanInfoGetFromCBSController.cs" />
+    <Compile Include="LoanScheduleByAAGetFromCBSController.cs" />
+    <Compile Include="LoanScheduleGetFromCBSController.cs" />
+    <Compile Include="LoginController.cs" />
+    <Compile Include="LPGetFromCBSController.cs" />
+    <Compile Include="OHGetFromCBSController.cs" />
+    <Compile Include="ProductGetFromCBSController.cs" />
+    <Compile Include="RepayGetFromCBSController.cs" />
+    <Compile Include="RepayGetFromCBSResModel.cs" />
+    <Compile Include="RepayPostToCBSController.cs" />
+    <Compile Include="RepayPostToCBSErrorController.cs" />
+    <Compile Include="RepayPostToCBSModel.cs" />
+    <Compile Include="VBByOfficeIDGetController.cs" />
+    <Compile Include="VBLinkGetFromCBSController.cs" />
+    <Compile Include="CustomerGetFromCBSController.cs" />
+    <Compile Include="CustomerModel.cs" />
+    <Compile Include="CustomerGetController.cs" />
+    <Compile Include="DefinedFieldGetController.cs" />
+    <Compile Include="DefinedFieldModel.cs" />
+    <Compile Include="FileUploadController.cs" />
+    <Compile Include="FileUploadMimeMultipart.cs" />
+    <Compile Include="FileUploadMultipartFormProvider.cs" />
+    <Compile Include="FileUploadResModel.cs" />
+    <Compile Include="FileUploadResult.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="LoanAppModel.cs" />
+    <Compile Include="LoanAppPostController.cs" />
+    <Compile Include="LoanAppPostToCBSController.cs" />
+    <Compile Include="LoanAppPostToCBSResModel.cs" />
+    <Compile Include="LoanAppResModel.cs" />
+    <Compile Include="ProductGetController.cs" />
+    <Compile Include="ProductModel.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ApiSecurity.cs" />
+    <Compile Include="testpage.aspx.cs">
+      <DependentUpon>testpage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="testpage.aspx.designer.cs">
+      <DependentUpon>testpage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VBGetByAMorCOFromDeviceController.cs" />
+    <Compile Include="VillageBankGetV2Controller.cs" />
+    <Compile Include="VillageBankGetController.cs" />
+    <Compile Include="VillageBankModel.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Uploads\" />
+    <Folder Include="Views\CustomerAML\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>57706</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:57706/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+    <Error Condition="!Exists('..\packages\Swashbuckle.AspNetCore.6.1.5\build\Swashbuckle.AspNetCore.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Swashbuckle.AspNetCore.6.1.5\build\Swashbuckle.AspNetCore.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
